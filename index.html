@@ -18,16 +18,18 @@
       Median room price<b> £<div class="median_price"></div></b>. Median budget of <b>£<div class="flatmate_median_budget"></div></b> among potential flatshares.</br><br>Difference between median budget and median price: <b>£<div class="price_budget"></div></b>
 
 </div>
+
+var json;
+$.getJSON("data.json", function(myjson){
+    json = myjson;
+});
 <svg viewbox="0 0 942.93903 871.48495"
     xmlns="http://www.w3.org/2000/svg" onload="init(evt,1)">
   
     <script type="text/javascript">
      <![CDATA[
 
-var json;
-$.getJSON("data.json", function(myjson){
-    json = myjson;
-});
+
 
 
 function init(evt, command) {

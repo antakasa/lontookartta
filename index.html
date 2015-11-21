@@ -32,7 +32,6 @@ $.getJSON("data.json", function(myjson){
 
 
 
-
 function init(evt, command) {
         if ( window.svgDocument == null ) {
           svgDocument = evt.target.ownerDocument;
@@ -129,6 +128,7 @@ function flatmates() {
     ]]>
 i = 1
 var main = function() {
+    init(null, 1) 
     $('#button').click(function() {
     if (i == 4) {
         i = 0

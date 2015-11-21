@@ -1,0 +1,109 @@
+.tooltip {
+    pointer-events:none; /*let mouse events pass through*/
+    transition: opacity 0s;
+
+}
+div.rooms, div.flatmate_median_budget, div.flatmate_ads, div.median_price, div.price_budget  
+{ 
+    display: inline;
+    font-weight: bold;
+}
+
+.mapview {
+    font-size: 1.5em;
+}
+.container{
+    text-align: center;
+    padding-bottom: 1em
+}
+div.tooltip {
+    display: none;
+    padding: 5px;
+    background: white;
+    border:solid 0.0px gray;
+    position: absolute;
+    max-width: 13em;
+    font-family: Helvetica, Arial;
+    font-size: 13px;
+    word-wrap: break-word;
+    border-radius: 4px;
+    border: 0.5px solid #8C8C8C;
+}
+div.tooltip p {
+    padding: 3px;
+    margin: 0px
+}
+
+
+body {
+  max-width: 40em;
+  margin-left:auto;
+  margin-right:auto;
+  background: white;
+}
+
+div.areaname
+{
+font-family: 'Helvetica Neue', Helvetica, Arial;
+font-size: 15px;
+font-style: normal;
+font-variant: normal;
+font-weight: bold;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+div.budgetandprice
+{
+color: rgb(204, 204, 204);
+font-family: 'Helvetica Neue', Helvetica, Arial;
+font-size: 14px;
+font-style: normal;
+font-variant: normal;
+font-weight: bold;
+padding-bottom: 10px;
+padding-top: 0px
+}
+
+.land
+    {
+        fill: black;
+        stroke: gray;
+        stroke-width: 0.5;
+        stroke-miterlimit: 4;
+    }
+        
+    .colour0 {fill: #f1eef6;}
+    .colour1 {fill: #bdc9e1; opacity: 0.8;}
+    .colour2 {fill: #74a9cf; opacity: 0.8}
+    .colour3 {fill: #0570b0; opacity: 0.9}
+
+    path:hover
+    {
+        opacity: 0.3;
+    }
+        
+
+
+.button {
+    background-color:#ffffff;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:0.5px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:15px;
+    padding:6px 24px;
+    margin-bottom: 1em;
+    text-decoration:none;
+}
+.button:hover {
+    background-color:#f6f6f6;
+}
+.button:active {
+    position:relative;
+    top:1px;
+}

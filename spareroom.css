@@ -36,7 +36,6 @@ div.tooltip p {
 
 
 body {
-  max-width: 40em;
   margin-left:auto;
   margin-right:auto;
   background: white;
@@ -68,6 +67,7 @@ padding-top: 0px
 .land
     {
         stroke: gray;
+        fill: white;
         stroke-width: 0.5;
         stroke-miterlimit: 4;
     }

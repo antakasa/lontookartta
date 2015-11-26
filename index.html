@@ -2822,19 +2822,23 @@ area.on("mouseover", function () {
         //mouse coordinates relative to the page as a whole
         //can be accessed directly from the click event object
         //(which d3 stores as d3.event)
+
+        /***** For an HTML tooltip *****/ 
+      
+        //mouse coordinates relative to the page as a whole
+        //can be accessed directly from the click event object
+        //(which d3 stores as d3.event)
         HTMLmouseTip
             .style("left", Math.max(0, d3.event.pageX - 150) + "px")
-            .style("top", (d3.event.pageY + 20) + "px")
-            
+            .style("top", (d3.event.pageY + 20) + "px");
     })
     .on("mouseout", function () {
         return tooltip.style("opacity", "0");
     });
-
         </script>
 
 
 
-        
+
 </body>
 </html>

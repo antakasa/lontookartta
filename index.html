@@ -2281,9 +2281,9 @@ var json = [ {
         "PRICE_BUDGET": "-28"
     }]; </script>
 <div class="kartta"> 
-<svg height="100%" width="100%" 
+<svg height="100%" width="100%" viewbox="0 0 942.93903 871.48495"
     xmlns="http://www.w3.org/2000/svg" onload="init(evt,1)">
-  <!-- viewbox="0 0 942.93903 871.48495" !-->
+  <!--  !-->
 
     <script type="text/javascript">
      <![CDATA[
@@ -2799,6 +2799,7 @@ $.getJSON("http://antakasa.github.io/ddj_antti/js/data.json", function(myjson){
    you could use JQuery or plain Javascript. */
 var area = d3.select("svg").select("g").selectAll("path")
 area.on("mouseover", function () {
+        $('.tooltip').css('display','initial');
         tooltip.style("opacity", "1"); 
         var t = d3.select(this).attr("id");
         for (var i = 0; i < json.length; i++) {
@@ -2834,6 +2835,6 @@ area.on("mouseover", function () {
 
 
 
-
+        
 </body>
 </html>

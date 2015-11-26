@@ -2799,7 +2799,6 @@ $.getJSON("http://antakasa.github.io/ddj_antti/js/data.json", function(myjson){
    you could use JQuery or plain Javascript. */
 var area = d3.select("svg").select("g").selectAll("path")
 area.on("mouseover", function () {
-        $('.tooltip').css('display','initial');
         tooltip.style("opacity", "1"); 
         var t = d3.select(this).attr("id");
         for (var i = 0; i < json.length; i++) {
@@ -2832,5 +2831,9 @@ area.on("mouseover", function () {
     });
 
         </script>
+
+
+
+
 </body>
 </html>
